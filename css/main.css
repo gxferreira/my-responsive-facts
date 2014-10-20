@@ -1,0 +1,92 @@
+html {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	background-color: #89C18C;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.facts div{
+	display: none;
+}
+
+.facts div:first-child{
+	display: block;
+}
+
+.flag{
+	border: 1px solid #888;
+}
+
+@media (max-width: 1050px){
+	/*SHOW FACT2*/
+	.facts div.fact2{
+		display: block;
+	}
+
+	body{
+		background-color: #5DA360;
+	}
+}
+
+@media (max-width: 900px){
+	/*SHOW FACT3*/
+	.facts div.fact3{
+		display: block;
+	}
+	body{
+		background-color: #3B823F;
+	}
+}
+
+@media (max-width: 750px){
+	/*SHOW FACT4*/
+	.facts div.fact4{
+		display: block;
+	}
+
+	body{
+		background-color: #1F6023;
+	}
+}
+
+@media (max-width: 600px){
+	/*SHOW FACT5*/
+	.facts div.fact5{
+		display: block;
+	}
+
+	body{
+		background-color: #0B3F0E;
+	}
+}
+
+@media (max-width: 450px){
+	/* SHOW FACT6 and 7*/
+	.facts div.fact6, .facts div.fact7{
+		display: block;
+	}
+
+	.facts div.fact7{
+		color: red;
+		font-size: 1.5em;
+	}
+
+	.facts div.fact4{
+		text-decoration: line-through;
+	}
+
+	body{
+		background-color: #032105;
+	}
+}
+
+
